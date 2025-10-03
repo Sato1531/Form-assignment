@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+}
+form{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border: 2px solid rgb(238, 195, 4);
+    border-radius: 18px;
+    padding: 20px;
+    height: 400px;
+    width: 250px;
+    background-color: antiquewhite;
+}
+
+input{
+    padding: 5px;
+    border-radius: 8px;
+    border: 1px solid rgb(238, 195, 4);
+    width: 230px;
+    height: 20px;
+}
+button{
+    background-color: rgb(238, 195, 4);
+    color: black;
+    border: none;
+    padding: 10px 14px;
+    width: 250px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+#EnterComment{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: 220px;
+    text-align: center;
+}
+h3{
+    color: black;
+    background-color: rgb(238, 195, 4);
+    border-radius: 5px;
+    padding: 15px;
+    outline: none;
+}
+.radio{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    align-items: end;
+    padding-right: 30px;
+}
+</style>
+</head>
+<body>
+    <h3>USER INFORMATION FORM</h3>
+    <div class="container">
+        <form action="#" method="post">
+            <input class="full-name" type="text" name="fullname" placeholder="Enter your Full-Name"  required>
+            <input class="email" type="text" name="email" placeholder="Enter your Email"  required>
+            <input class="tel" type="text" name="phone" placeholder="Enter your Phone-No." required>
+            <input type="date" name="dateofbirth" required>
+        <div class="radio">
+            <input type="radio" id="male" name="gender" value="male"><label for="male"> Male</label>
+            <input type="radio" id="female" name="gender" value="female"><label for="female">Female</label>
+        </div>
+            <textarea name="message" id="EnterComment" placeholder="Enter message or recommandation"></textarea> <br>
+    <button type="submit">Submit</button>
+    </form>
+        </div>
+        
+    
+</body>
+</html>
